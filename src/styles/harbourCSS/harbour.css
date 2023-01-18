@@ -1,0 +1,44 @@
+.harbourBox {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: auto;
+    font-family: "Gotham";
+    padding: 2rem;
+
+}
+.topHarbourBox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    font-size: 3rem;
+    gap: 2rem;
+
+}
+.midHarbourBox {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.bottomHarbourBox {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.bottomHarbourBox h2 {
+    color: green;
+}
+.harbourBoats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}

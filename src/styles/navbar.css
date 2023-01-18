@@ -1,0 +1,361 @@
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem)
+}
+#noLine {
+    text-decoration: none;
+}
+
+
+.logo {
+    
+    font-weight: 800;
+    color: white;
+    font-size: calc(1.5rem + 1vw);
+    text-transform: uppercase;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-left: 4rem;
+}
+.logo p {
+    font-family: "Gotham" !important;
+    color: white !important;
+}
+.fire {
+    margin: 0 0.7rem;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+}
+nav {
+    font-family: "Integral";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+    height: 8rem;
+    background: linear-gradient(90deg, rgba(49,34,183,1) 3%, rgba(141,0,255,1) 100%, rgba(0,212,255,1) 100%);
+
+}
+
+.primary-header {
+
+    align-items: center;
+    justify-content: space-between;
+
+}
+.primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 2rem;
+    
+    
+}
+.signInArea h5 {
+    color: white;
+}
+
+.copyRight {
+    display: none;
+}
+
+.navLink:hover {
+    color: #fbb040 !important;
+
+}
+
+.primary-navigation li {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+.primary-navigation li:hover {
+  
+    color: #fbb040 !important;
+}
+
+.signInArea {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-right: 3rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+   
+   
+}
+.signInArea button:nth-child(2) {
+    background-color: black;
+    color: white;
+    transition: 300ms;
+    border: none;
+}
+.signInArea button:nth-child(2):hover {
+    transform: scale(1.10);
+}
+.signInArea button:nth-child(1) {
+    background-color: transparent;
+    color: white;
+    border: 0.3rem solid #FBB040;
+    padding: 0.2rem;
+    
+}
+
+.buttonEffect {
+    
+    height: 110%;
+    position: absolute;
+    left: -1%;
+    width: 0;
+    display: flex;
+    background: #FBB040;
+    transition: width 500ms;
+    transition-timing-function: cubic-bezier(.5,.41,.83,.67);
+    z-index: 4;
+
+}
+.signInArea button:nth-child(1) .buttonText {
+    position: absolute;
+    color: white;
+    z-index: 5;
+
+}
+button:nth-child(2) {
+    transition: 500ms ease-in
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:transparent;
+    color: white;
+    width: auto;
+    padding: 0;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Gotham";
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 2rem;
+    width: auto;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    justify-content: center;
+    padding: 1rem;
+    color: white;
+  }
+  .status {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .status .user {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(40, 128, 40, 0.306);
+  }
+  .status .admin {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(40, 128, 40, 0.306);
+
+  }
+  .content button {
+    margin: 0 auto;
+    width: 70%;
+    height: 2rem;
+    background-color: rgba(255, 0, 0, 0.686);
+    color: white;
+    font-family: "Gotham";
+    border: none;
+    transition: 300ms;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  .content button:hover {
+    background-color: rgb(190, 11, 11);
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #8C01FE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  
+
+
+
+
+button:nth-child(1):hover>.buttonEffect{
+    width: 102%;
+}
+
+.signInArea button {
+    width: 8rem;
+    height: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    font-family: "Gotham";
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.mobile-nav-toggle {
+    display: none;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+@media (max-width: 1024px) {
+    .primary-navigation {
+        --gap: 2em;
+        position: fixed;
+        inset: 0 0 0 0vw;
+        z-index: 1000;
+        background: black;
+        backdrop-filter: blur(1rem);
+        padding: min(30vh, 6rem) 2em;
+        transform: translateX(100%);
+        transition: 350ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .primary-navigation li{
+        font-size: 3rem
+    }
+    .signInArea {
+        margin-right: 0;
+    }
+    
+    #open {
+        transform: translateX(0%)
+    }
+    .logo { 
+        position: fixed;
+        top: 2.5rem;
+        
+    }
+    .logo p {
+        font-size: 2rem;
+    }
+    .copyRight {
+        display: block;
+    }
+    .copyRight p {
+        font-size: calc(0.2rem + 1vw);
+        color: white;
+    }
+
+    .signInArea button {
+        font-size: 10px;
+        width: calc(7rem  + 5vw);
+        height: calc(4rem  + 3vw);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+   
+    
+    .primary-navigation li {
+        flex-direction: column;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        background-color: transparent;
+        width: 2rem;
+        aspect-ratio: 1;
+        border: 0;
+        top: 2.8rem;
+        right: 2rem;
+        z-index: 9999;
+        cursor: pointer;
+        position: fixed;
+    
+    }
+    .hamburger {
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    .bar {
+        
+        background-color: black;
+        height: 0.25rem;
+        width: 1.7rem;
+        border-radius: 5rem;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
+    .hamburger#active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger#active .bar:nth-child(1) {
+        transform: translateY(0.55rem) rotate(45deg);
+        
+    }
+    .hamburger#active .bar:nth-child(3) {
+        transform: translateY(-0.55rem) rotate(-45deg);
+        
+    }
+    
+}

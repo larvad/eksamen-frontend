@@ -1,0 +1,86 @@
+.ownersContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "Gotham";
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.ownerBox {
+    height: auto;
+    width: 80%;
+    display: flex;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-direction: column;
+
+}
+
+.ownerRow1 {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+#open {
+    display: block;
+}
+.ownerRow2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+    display: none;
+}
+.ownerProfile {
+    width: 50%;
+    padding: 3rem;
+    font-size: 2rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+.ownerBoats {
+    width: 50%;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.ownerBoats p {
+    text-transform: uppercase;
+}
+.ownerBoats button {
+    width: auto;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    transition: 200ms ease;
+
+}
+#activeView {
+    background-color: black;
+    color: white;
+}
+.ownerBoats button:hover {
+    background-color: black;
+    color: white;
+}
+.boatItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.boatItem img {
+    width: 10%;
+}

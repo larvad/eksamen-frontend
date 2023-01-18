@@ -1,0 +1,179 @@
+.signIn {
+    width: 100%;
+    height: calc(100vh - 8rem);
+    background: rgb(49,34,183);
+    background: linear-gradient(90deg, rgba(49,34,183,1) 3%, rgba(141,0,255,1) 100%, rgba(0,212,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+.signInItems {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.signInItems .leftSignIn {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftSignIn > img {
+    width: 50%;
+}
+.signInItems .rightSignIn {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightSignIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+.rightSignIn h2 {
+    font-family: "Gotham";
+    font-size: 4rem;
+    margin-top: -3rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+.rightSignIn .input{
+    width: 60%;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.254);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.rightSignIn .input input {
+    border: none;
+    outline: none;
+    color: white;
+    text-indent: 1rem;
+    font-size: 1.3rem;
+    font-family: "Gotham";
+    width: 85%;
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+}
+.rightSignIn .input input::placeholder {
+  color: rgba(245, 245, 245, 0.499);
+   
+}
+.rightSignIn .input .inputLogo {
+    color: #FBB040;
+    font-size: 2rem;
+    
+}
+.rightSignIn button {
+    width: 50%;
+    height: 4rem;
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: "Gotham";
+    margin-top: 2rem;
+    transition: 300ms;
+}
+.rightSignIn button:hover {
+    transform: scale(1.10);
+}
+.typeText {
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gotham";
+    color: white;
+    
+    font-size: 5rem;
+}
+.typeText p {
+    padding: 0 12rem;
+}
+
+.fade-in-scale {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  
+  .animation {
+    animation: fade-in-scale 0.5s ease-in-out forwards;
+  }
+
+.hide {
+    display: none;
+}
+
+.buttonsSignIn {
+    margin-top: 3rem;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.buttonsSignIn button {
+    width: 15rem;
+    height: 5rem;
+    font-family: "Gotham";
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 300ms;
+}
+
+.buttonsSignIn .button2:nth-child(1) {
+    background-color: transparent;
+    border: 5px solid white;
+    color: white;
+}
+.buttonsSignIn .button1:nth-child(1) {
+    background-color:blueviolet;
+    color:white;
+    outline: none;
+    border: none;
+}
+.buttonsSignIn button:nth-child(1):hover {
+
+    
+    background-color:rgba(137, 43, 226, 0.689);
+
+}
+.buttonsSignIn .button2:nth-child(1):hover {
+    background-color: #fbb040;
+}
+
+  @keyframes fade-in-scale {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+@media (max-width: 1024px) {
+    .signInItems .leftSignIn {
+        width: 0;
+        height: 0;
+    }
+    .signInItems .rightSignIn  {
+        width: 100%;
+    }
+}

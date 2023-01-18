@@ -1,0 +1,69 @@
+.fieldBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-family: "Gotham";
+    
+}
+.unlink {
+    text-decoration: none;
+    color: black;
+}
+.fieldBox {
+    width: 20rem;
+    height: 20rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 2rem; 
+    cursor: pointer;
+    transition: 200ms ease;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.575);
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+.fieldLogo {
+    font-size: 5rem;
+}
+.fieldBox:hover {
+    transform: scale(1.05);
+    color: black;
+}
+.arrowBack {
+    font-size: 3rem;
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+}
+header {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gotham";
+}
+header p {
+    font-size: 2rem;
+    color: black;
+} 
+.harbourTitle {
+    margin-top: 3rem;
+    width: 100%;
+    height: 5rem;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.harbourTitle p {
+    font-size: 3rem;
+    font-family: "Branch";
+
+}
