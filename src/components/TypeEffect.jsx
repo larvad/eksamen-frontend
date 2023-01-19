@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Buttons from './Buttons';
-import ReactPlayer from 'react-player'
-import video from '../assets/videos/dining.mp4'
+import video from '../assets/videos/compressed.mp4'
 
 const TypeEffect = ({ message }) => {
   const [text, setText] = useState("");

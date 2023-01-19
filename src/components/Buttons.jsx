@@ -18,7 +18,7 @@ const Buttons = () => {
         <NavLink to="/booking">
         <button className={`button1 ${showButtons ? "fade-in-scale animation" : "hide"}`}>Booking</button>
         </NavLink>
-        <NavLink to="/opgave">
+        <NavLink to="/account">
         <button className={`button2 ${showButtons ? "fade-in-scale animation" : "hide"}`}>My Account</button>
         </NavLink>
       </div>

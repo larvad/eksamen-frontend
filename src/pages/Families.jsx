@@ -36,6 +36,9 @@ const Families = ({username, userDetails, setUserDetails}) => {
     <>
     
     <div className="familiesBack">
+      <div className="eventTitle">
+        <p>Families</p>
+      </div>
       {families.map( family => {
         return(
 

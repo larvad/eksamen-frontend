@@ -6,6 +6,7 @@ import { useEffect, useState } from "react"
 import Navbar from "./components/Navbar"
 import Booking from "./pages/Booking"
 import Admin from "./pages/Admin"
+import Account from "./pages/Account"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Route path="/" element={<Welcome facade={facade} loggedIn={loggedIn} setLoggedIn={setLoggedIn} errorMessage={errorMessage} setErrorMessage={setErrorMessage} setUsername={setUsername} username={username}/>}/>
       <Route path="/families" element={<Families username={username} userDetails={userDetails} setUserDetails={setUserDetails}/>}/>
       <Route path="/booking" element={<Booking userDetails={userDetails} setUserDetails={setUserDetails} username={username} />}/>
+      <Route path="/account" element={<Account username={username} userDetails={userDetails} setUserDetails={setUserDetails}/>}/>
 
       {/* Admin CRUD */}
       {facade.hasUserAccess('admin', loggedIn) &&

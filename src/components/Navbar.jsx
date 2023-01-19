@@ -86,6 +86,17 @@ const Navbar = ({loggedIn, username, setLoggedIn}) => {
                     Families
                 </NavLink>
                 </li>
+                <li>
+                <NavLink 
+                    to="/account" 
+                    className="navLink"
+                    style={({ isActive }) =>
+                    isActive ? activeStyle : passiveStyle}
+                    >
+                    Account
+                </NavLink>
+                </li>
+                
                 {facade.hasUserAccess('admin', loggedIn) &&
                 <li>
                 <NavLink 

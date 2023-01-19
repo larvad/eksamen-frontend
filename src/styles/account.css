@@ -1,0 +1,42 @@
+.accountBack {
+    width: 100%;
+    height: 50rem;
+    background: #c31432;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: linear-gradient(90deg, #4f1616 3%, #c31432 100%);
+    padding-bottom: 5rem;  
+    gap: 2rem;
+}
+.accountHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.accountHeader p {
+    font-size: 2rem;
+    font-family: "Gado";
+}
+.balance {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.balance button {
+    width: 20rem;
+    height: 4rem;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: "Gotham";
+    transition: 300ms ease;
+}
+.balance button:hover {
+    background-color: rgb(221, 220, 220);
+    
+}

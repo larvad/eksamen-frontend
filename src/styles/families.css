@@ -4,12 +4,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
     background: linear-gradient(90deg, #4f1616 3%, #c31432 100%);
     padding-bottom: 5rem;  
     gap: 2rem;
 }
+
+
+
+
 .familyItem {
     padding: 2rem 0;
     width: 70%;
