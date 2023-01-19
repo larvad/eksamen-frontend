@@ -1,44 +1,44 @@
-import React from 'react'
-import facade from '../../apiFacade.js'
+// import React from 'react'
+// import facade from '../../apiFacade.js'
 
-const Admin = () => {
-    const [brand, setBrand] = useState('');
-    const [image, setImage] = useState('');
-    const [make, setMake] = useState('');
-    const [harbourId, setHarbourId] = useState('');
-    const [ownerId, setOwnerId] = useState('');
+// const Admin = () => {
+//     const [brand, setBrand] = useState('');
+//     const [image, setImage] = useState('');
+//     const [make, setMake] = useState('');
+//     const [harbourId, setHarbourId] = useState('');
+//     const [ownerId, setOwnerId] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+//     const handleSubmit = (e) => {
+//         e.preventDefault();
     
-        facade.fetchData()
-        axios.post('/api/items', {
-          brand,
-          image,
-          make,
-          harbourId,
-          ownerId
-        })
-        .then(res => {
-          console.log(res.data);
-        })
-        .catch(err => {
-          console.error(err);
-        });
-      };
+//         facade.fetchData()
+//         axios.post('/api/items', {
+//           brand,
+//           image,
+//           make,
+//           harbourId,
+//           ownerId
+//         })
+//         .then(res => {
+//           console.log(res.data);
+//         })
+//         .catch(err => {
+//           console.error(err);
+//         });
+//       };
 
-  return (
-    <>
+//   return (
+//     <>
 
-    <p>Admin Dashboard</p>
+//     <p>Admin Dashboard</p>
 
-    <div className="createBoat">
+//     <div className="createBoat">
 
-    </div>
+//     </div>
     
     
-    </>
-  )
-}
+//     </>
+//   )
+// }
 
-export default Admin
+// export default Admin

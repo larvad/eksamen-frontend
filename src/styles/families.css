@@ -19,9 +19,7 @@
     font-family: "Gotham";
     flex-direction: column;
     color: white;
-}
-.familyItem {
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .familyItem .familyTitle {
@@ -33,12 +31,52 @@
 }
 .familyDetails {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 .familyDate {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+}
+.familyText {
+    display: flex;
+    padding: 1rem 18rem;
+    line-height: 1.5;
+}
+.familyMembers {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.2rem;
+}
+.familyMembers .activeMembers {
+    padding-right: 1rem;
+}
+.joinFamily {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.joinFamily button {
+    width: 30%;
+    height: 4rem;
+    font-family: "Gotham";
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.joinFamily button:hover {
+    background-color: rgb(216, 215, 215);
 }

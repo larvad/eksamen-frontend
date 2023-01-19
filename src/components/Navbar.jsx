@@ -35,8 +35,6 @@ const Navbar = ({loggedIn, username, setLoggedIn}) => {
     let passiveStyle = {
         color: "white",
         textDecoration: "none",
-
-        
       }
    
 
@@ -88,16 +86,18 @@ const Navbar = ({loggedIn, username, setLoggedIn}) => {
                     Families
                 </NavLink>
                 </li>
+                {facade.hasUserAccess('admin', loggedIn) &&
                 <li>
                 <NavLink 
-                    to="/page3" 
+                    to="/admin" 
                     className="navLink"
                     style={({ isActive }) =>
                     isActive ? activeStyle : passiveStyle}
                     >
-                    Page3
+                    Admin
                 </NavLink>
                 </li>
+                }
 
                 
 

@@ -1,16 +1,11 @@
 import { Route, Routes } from "react-router-dom"
 import Welcome from "./pages/Welcome"
 import Families from "./pages/Families"
-import Page3 from "./pages/Page3"
 import facade from './apiFacade.js'
 import { useEffect, useState } from "react"
 import Navbar from "./components/Navbar"
-import Harbour from "./pages/Harbour"
-import Harbours from "./pages/harbour/Harbours"
-import Owners from "./pages/harbour/Owners"
-import Boats from "./pages/harbour/Boats"
-import Circles from "./components/Circles"
 import Booking from "./pages/Booking"
+import Admin from "./pages/Admin"
 
 function App() {
 
@@ -18,12 +13,7 @@ function App() {
   const [loginMessage, setLoginMessage] = useState("Log in to use the API");
   const [errorMessage, setErrorMessage] = useState("No Errors");
   const [username, setUsername] = useState('')
-
-  
-
-
-
-
+  const [userDetails, setUserDetails] = useState([])
   
   return (
     <>
@@ -32,16 +22,14 @@ function App() {
     }
     <Routes>
       <Route path="/" element={<Welcome facade={facade} loggedIn={loggedIn} setLoggedIn={setLoggedIn} errorMessage={errorMessage} setErrorMessage={setErrorMessage} setUsername={setUsername} username={username}/>}/>
-      <Route path="/harbour" element={<Harbour/>}/>
-      <Route path="/families" element={<Families/>}/>
-      <Route path="/page3" element={<Page3/>}/>
-      <Route path="/booking" element={<Booking />}/>
-      
+      <Route path="/families" element={<Families username={username} userDetails={userDetails} setUserDetails={setUserDetails}/>}/>
+      <Route path="/booking" element={<Booking userDetails={userDetails} setUserDetails={setUserDetails} username={username} />}/>
 
-      {/* Harbour Opgave */}
-      <Route path="/harbour/harbours" element={<Harbours/>}/>
-      <Route path="/harbour/owners" element={<Owners/>}/>
-      <Route path="/harbour/boats" element={<Boats/>}/>
+      {/* Admin CRUD */}
+      {facade.hasUserAccess('admin', loggedIn) &&
+      <Route path="/admin" element={<Admin/>}/>
+      }
+
 
       
     </Routes>
