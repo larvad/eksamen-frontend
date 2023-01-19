@@ -23,7 +23,7 @@ const Navbar = ({loggedIn, username, setLoggedIn}) => {
     const perfomLogout = (evt) => {
         evt.preventDefault();
         facade.logout(setLoggedIn);
-        window.location.href = '/';
+        window.location.href = '/eksamen';
         
     }
 
@@ -48,7 +48,7 @@ const Navbar = ({loggedIn, username, setLoggedIn}) => {
            
                 <div className="logo">
                     <Link className='unlink' to="/">
-                    <p>3 sem Eksamen</p>
+                    <p>Communal Dining Club</p>
                     </Link>
                 </div>
            
@@ -70,33 +70,22 @@ const Navbar = ({loggedIn, username, setLoggedIn}) => {
                 
                 <li>
                  <NavLink 
-                    to="/dashboard" 
+                    to="/booking" 
                     className="navLink"
                     style={({ isActive }) =>
                     isActive ? activeStyle : passiveStyle}
                     >
-                    Dashboard
-                </NavLink>
-                </li>
-
-                <li>
-                <NavLink 
-                    to="/harbour" 
-                    className="navLink"
-                    style={({ isActive }) =>
-                    isActive ? activeStyle : passiveStyle}
-                    >
-                    Harbour
+                    Booking
                 </NavLink>
                 </li>
                 <li>
                 <NavLink 
-                    to="/page2" 
+                    to="/families" 
                     className="navLink"
                     style={({ isActive }) =>
                     isActive ? activeStyle : passiveStyle}
                     >
-                    Page2
+                    Families
                 </NavLink>
                 </li>
                 <li>
@@ -133,8 +122,8 @@ const Navbar = ({loggedIn, username, setLoggedIn}) => {
                             <div className="content">
                                 <div className="status">
                                     <p>Role</p>
-                                    {facade.hasUserAccess('user', loggedIn) && 
-                                    <p className='user'>User</p>}
+                                    {facade.hasUserAccess('member', loggedIn) && 
+                                    <p className='user'>Member</p>}
                                     {facade.hasUserAccess('admin', loggedIn) && 
                                     <p className='admin'>Admin</p>}
                                 </div>

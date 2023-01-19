@@ -15,11 +15,11 @@ const Buttons = () => {
   
     return (
       <div className='buttonsSignIn'>
-        <NavLink to="/dashboard">
-        <button className={`button1 ${showButtons ? "fade-in-scale animation" : "hide"}`}>Dashboard</button>
+        <NavLink to="/booking">
+        <button className={`button1 ${showButtons ? "fade-in-scale animation" : "hide"}`}>Booking</button>
         </NavLink>
         <NavLink to="/opgave">
-        <button className={`button2 ${showButtons ? "fade-in-scale animation" : "hide"}`}>Eksamensopgave</button>
+        <button className={`button2 ${showButtons ? "fade-in-scale animation" : "hide"}`}>My Account</button>
         </NavLink>
       </div>
     );

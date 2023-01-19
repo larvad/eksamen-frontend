@@ -1,0 +1,44 @@
+.familiesBack {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, #4f1616 3%, #c31432 100%);
+    padding-bottom: 5rem;  
+    gap: 2rem;
+}
+.familyItem {
+    padding: 2rem 0;
+    width: 70%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.035);
+    display: flex;
+    font-family: "Gotham";
+    flex-direction: column;
+    color: white;
+}
+.familyItem {
+    gap: 1rem;
+}
+
+.familyItem .familyTitle {
+    
+    font-size: 3rem;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.familyDetails {
+    display: flex;
+    flex-direction: column;
+}
+.familyDate {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}

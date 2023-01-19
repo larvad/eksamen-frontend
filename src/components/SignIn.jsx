@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import cphbusiness from '../assets/images/cphbusiness.png'
 import * as Io from 'react-icons/io'
 import TypeEffect from "./TypeEffect";
+import Circles from "./Circles";
 
 
 
@@ -25,12 +26,24 @@ const SignIn = ({facade, loggedIn, setLoggedIn, errorMessage, setErrorMessage, s
 
   return (
     <div className="signIn">
+        {!loggedIn &&  
+        <div className="subNav">
+            <div className="slogo">
+                <p>3 sem eksamen</p>
+            </div>
+            
+        </div>
+         
+        }
+     
+        {!loggedIn && <Circles/>}
        
        {!loggedIn && 
         <div className="signInItems">
             <div className="leftSignIn">
                 <img src={cphbusiness}/>
             </div>
+        
 
             <div className="rightSignIn">
                 <h2>Login</h2>
@@ -57,7 +70,7 @@ const SignIn = ({facade, loggedIn, setLoggedIn, errorMessage, setErrorMessage, s
         </div>
         }
         {loggedIn &&
-        <TypeEffect message={"Velkommen, du har nu adgang til sidens funktionalitet"}/>
+        <TypeEffect message={"Velkommen, du har nu adgang til sidens funktionalitet!"}/>
         }
         
     </div>

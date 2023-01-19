@@ -1,0 +1,58 @@
+.dashboardBack {
+    width: 100%;
+    height: auto;
+    background: #c31432;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, #4f1616 3%, #c31432 100%);
+    padding-bottom: 5rem;  
+    gap: 2rem;
+}
+.eventTitle {
+    margin-top: 5rem;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.eventTitle p {
+    font-size: 2.5rem;
+    font-family: "Gado";
+    color: white;
+}
+.event {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.event img {
+    width: 50%;
+}
+.event p {
+    color: white;
+    font-family: "Gotham";
+}
+.event .name {
+    font-size: 3rem;
+}
+.eventItem {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    color: white;
+}
+.eventItems {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+

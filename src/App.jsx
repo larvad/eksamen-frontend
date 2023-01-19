@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import Welcome from "./pages/Welcome"
-import Page2 from "./pages/Page2"
+import Families from "./pages/Families"
 import Page3 from "./pages/Page3"
 import facade from './apiFacade.js'
 import { useEffect, useState } from "react"
@@ -9,6 +9,8 @@ import Harbour from "./pages/Harbour"
 import Harbours from "./pages/harbour/Harbours"
 import Owners from "./pages/harbour/Owners"
 import Boats from "./pages/harbour/Boats"
+import Circles from "./components/Circles"
+import Booking from "./pages/Booking"
 
 function App() {
 
@@ -17,18 +19,24 @@ function App() {
   const [errorMessage, setErrorMessage] = useState("No Errors");
   const [username, setUsername] = useState('')
 
+  
+
 
 
 
   
   return (
     <>
+    {loggedIn && 
     <Navbar username={username} loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
+    }
     <Routes>
       <Route path="/" element={<Welcome facade={facade} loggedIn={loggedIn} setLoggedIn={setLoggedIn} errorMessage={errorMessage} setErrorMessage={setErrorMessage} setUsername={setUsername} username={username}/>}/>
       <Route path="/harbour" element={<Harbour/>}/>
-      <Route path="/page2" element={<Page2/>}/>
+      <Route path="/families" element={<Families/>}/>
       <Route path="/page3" element={<Page3/>}/>
+      <Route path="/booking" element={<Booking />}/>
+      
 
       {/* Harbour Opgave */}
       <Route path="/harbour/harbours" element={<Harbours/>}/>

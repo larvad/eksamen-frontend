@@ -1,0 +1,87 @@
+/* CSS for the circle */
+
+
+.circle {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.077);
+    position: absolute; 
+    animation: bubble 20s ease-in-out infinite;   
+    z-index: 1;
+    
+}
+.circle1 {
+    width: 250px;
+    top: 0rem;
+    left: 10rem;
+}
+.circle2 {
+   width: 130px;
+   top: 5rem;
+   right: 15rem;
+   animation: bubble 40s ease-in-out infinite;  
+}
+.circle3 {
+    width: 200px;
+    right: 50rem;
+    bottom: 5rem;
+    animation: bubbleReverse 30s ease-in-out infinite; 
+}
+
+.circle4 {
+    width: 50px;
+    bottom: 5rem;
+    right: 5rem;
+    animation: bubbleReverse 80s ease-in-out infinite; 
+}
+
+.circle5 {
+    width: 350px;
+    top: -5rem;
+    left: 45rem;
+    animation: bubbleReverse 50s ease-in-out infinite; 
+}
+.circle6 {
+    width: 80px;
+    left: 10rem;
+    bottom: 15rem;
+}
+  
+  /* Animation for the bubble effect */
+  @keyframes bubble {
+    /* Define the animation steps */
+    0% {
+      transform: translate(0, 0); /* Start position */
+    }
+    25% {
+      transform: translate(50px, 50px); /* Move right and down */
+    }
+    50% {
+      transform: translate(0, 100px); /* Move back up */
+    }
+    75% {
+      transform: translate(-50px, 50px); /* Move left and down */
+    }
+    100% {
+      transform: translate(0, 0); /* Return to start position */
+    }
+  }
+  @keyframes bubbleReverse {
+    /* Define the animation steps */
+    0% {
+      transform: translate(0, 0); /* Start position */
+    }
+    25% {
+      transform: translate(-50px, -50px); /* Move right and down */
+    }
+    50% {
+      transform: translate(0, -100px); /* Move back up */
+    }
+    75% {
+      transform: translate(50px, -50px); /* Move left and down */
+    }
+    100% {
+      transform: translate(0, 0); /* Return to start position */
+    }
+  }
+  
