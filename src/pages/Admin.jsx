@@ -2,7 +2,14 @@ import '../styles/admin.css'
 
 const Admin = () => {
   return (
-    <div>Admin</div>
+    <>
+    <div className="adminBack">
+      <div className="eventTitle">
+        <p>Admin</p>
+      </div>
+    </div>
+
+    </>
   )
 }
 
